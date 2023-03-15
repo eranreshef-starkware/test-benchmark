@@ -99,7 +99,6 @@ jobs:
         run: |
           git fetch
           git checkout gh-pages
-          mv cache/new-benchmark-data.json cache/benchmark-data.json
           git config --global user.name "eran-test-user"
           git config --global user.email "username@users.noreply.github.com"
           git add .
