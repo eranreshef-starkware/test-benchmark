@@ -101,7 +101,7 @@ jobs:
           git config --global user.email "username@users.noreply.github.com"
           git add .
           git commit -m "${UNIQE_ID}"
-          git push 'https://eranreshef-starkware:${{ secrets.GITHUB_TOKEN }}@github.com/eranreshef-starkware/test-benchmark.git' master:gh-pages
+          git push 'https://eranreshef-starkware:${{ secrets.GITHUB_TOKEN }}@github.com/eranreshef-starkware/test-benchmark.git' master:gh-pages --force
       # - name: Clean the deployment
       #   if: always()
       #   run: helm delete --namespace papyrus papyrus-${UNIQE_ID}
