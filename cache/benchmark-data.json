@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1678894283657,
+  "lastUpdate": 1678900314255,
   "repoUrl": "https://github.com/eranreshef-starkware/test-benchmark",
   "entries": {
     "Benchmark": [
@@ -54,13 +54,13 @@
             "username": "eranreshef-starkware"
           },
           "distinct": true,
-          "id": "5dea19d26fc3024abff438d0624a67c84470c3c0",
-          "message": "higher values",
-          "timestamp": "2023-03-15T17:31:04+02:00",
-          "tree_id": "26f75d837846123efde1600a21df9382104dd4ff",
-          "url": "https://github.com/eranreshef-starkware/test-benchmark/commit/5dea19d26fc3024abff438d0624a67c84470c3c0"
+          "id": "5e8f55890036eab9080e53b6df3cab3ef1b1c911",
+          "message": "test",
+          "timestamp": "2023-03-15T19:11:36+02:00",
+          "tree_id": "de79180c000ec1f340ee0d3ada1d3d5ed0201abd",
+          "url": "https://github.com/eranreshef-starkware/test-benchmark/commit/5e8f55890036eab9080e53b6df3cab3ef1b1c911"
         },
-        "date": 1678894283656,
+        "date": 1678900314255,
         "tool": "customSmallerIsBetter",
         "benches": [
           {
