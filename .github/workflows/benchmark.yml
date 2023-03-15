@@ -5,6 +5,12 @@ on:
   push:
     branches: [master]
 
+permissions:
+  # deployments permission to deploy GitHub pages website
+  deployments: write
+  # contents permission to update benchmark contents in gh-pages branch
+  contents: write
+
 jobs:
   deploy-benchmark-teardown:
     runs-on: ubuntu-latest
@@ -81,6 +87,7 @@ jobs:
       - name: Store benchmark result
         uses: benchmark-action/github-action-benchmark@v1
         with:
+          name: My Test Benchmark
           # What benchmark tool the output.txt came from
           tool: "customSmallerIsBetter"
           # Where the output from the benchmark tool is stored
@@ -89,7 +96,10 @@ jobs:
           external-data-json-path: ./cache/benchmark-data.json
           # Workflow will fail when an alert happens
           fail-on-alert: true
+          auto-push: false
 
+      - name: Push benchmark result
+        run: git push 'https://eranreshef-starkware:${{ secrets.GITHUB_TOKEN }}@github.com/eranreshef-starkware/test-benchmark.git' gh-pages:gh-pages
       # - name: Clean the deployment
       #   if: always()
       #   run: helm delete --namespace papyrus papyrus-${UNIQE_ID}
