@@ -99,7 +99,10 @@ jobs:
           auto-push: false
 
       - name: Push benchmark result
-        run: git push 'https://eranreshef-starkware:${{ secrets.GITHUB_TOKEN }}@github.com/eranreshef-starkware/test-benchmark.git' gh-pages:gh-pages
+        run: |
+          git add .
+          git commit -m "${UNIQE_ID}"
+          git push 'https://eranreshef-starkware:${{ secrets.GITHUB_TOKEN }}@github.com/eranreshef-starkware/test-benchmark.git' gh-pages:gh-pages
       # - name: Clean the deployment
       #   if: always()
       #   run: helm delete --namespace papyrus papyrus-${UNIQE_ID}
