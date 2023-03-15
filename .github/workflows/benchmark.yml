@@ -94,7 +94,6 @@ jobs:
           # Workflow will fail when an alert happens
           fail-on-alert: true
           auto-push: false
-          benchmark-data-dir-path: cache
 
       - name: Push benchmark result
         run: |
