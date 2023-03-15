@@ -97,6 +97,7 @@ jobs:
 
       - name: Push benchmark result
         run: |
+          mv cache/benchmark-data.json cache/new-benchmark-data.json
           git fetch
           git checkout gh-pages
           git config --global user.name "eran-test-user"
