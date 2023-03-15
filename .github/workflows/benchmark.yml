@@ -98,6 +98,7 @@ jobs:
 
       - name: Push benchmark result
         run: |
+          git checkout gh-pages
           git config --global user.name "eran-test-user"
           git config --global user.email "username@users.noreply.github.com"
           git add .
