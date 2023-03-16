@@ -61,12 +61,12 @@ jobs:
               {
                   "name": "My Custom Smaller Is Better Benchmark - CPU Load",
                   "unit": "Percent",
-                  "value": 200
+                  "value": ${{ github.run_number }}
               },
               {
                   "name": "My Custom Smaller Is Better Benchmark - Memory Used",
                   "unit": "Megabytes",
-                  "value": 450,
+                  "value": ${{ github.run_attempt }},
                   "range": "3",
                   "extra": "Value for Tooltip: 25\nOptional Num #2: 100\nAnything Else!"
               }
@@ -97,8 +97,12 @@ jobs:
 
       - name: Push benchmark result
         run: |
+          ls -l
+          git status
           git fetch
           git checkout gh-pages
+          ls -l
+          git status
           git config --global user.name "eran-test-user"
           git config --global user.email "username@users.noreply.github.com"
           git add .
