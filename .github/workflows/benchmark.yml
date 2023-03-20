@@ -100,7 +100,7 @@ jobs:
           ls -l
           git status
           git fetch
-          git checkout gh-pages --force
+          git checkout gh-pages --merge
           ls -l
           git status
           git config --global user.name "eran-test-user"
