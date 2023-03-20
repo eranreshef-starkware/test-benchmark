@@ -100,12 +100,9 @@ jobs:
           ls -l
           git status
           git fetch
-          git add .
-          git stash push
-          git checkout gh-pages
+          git checkout gh-pages --force
           ls -l
           git status
-          git stash pop
           git config --global user.name "eran-test-user"
           git config --global user.email "username@users.noreply.github.com"
           git add .
