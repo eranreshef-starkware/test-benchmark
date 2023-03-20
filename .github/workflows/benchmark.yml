@@ -99,6 +99,7 @@ jobs:
         run: |
           ls -l
           git status
+          rm -r cache
           git fetch
           git checkout gh-pages
           ls -l
