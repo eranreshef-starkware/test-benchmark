@@ -61,12 +61,12 @@ jobs:
               {
                   "name": "My Custom Smaller Is Better Benchmark - CPU Load",
                   "unit": "Percent",
-                  "value": 34
+                  "value": 30
               },
               {
                   "name": "My Custom Smaller Is Better Benchmark - Memory Used",
                   "unit": "Megabytes",
-                  "value": 9,
+                  "value": 8,
                   "range": "3",
                   "extra": "Value for Tooltip: 25\nOptional Num #2: 100\nAnything Else!"
               }
