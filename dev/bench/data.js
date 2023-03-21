@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1679383007941,
+  "lastUpdate": 1679383271869,
   "repoUrl": "https://github.com/eranreshef-starkware/test-benchmark",
   "entries": {
     "My Test Benchmark": [
@@ -33,6 +33,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "My Custom Smaller Is Better Benchmark - Memory Used",
             "value": 5,
+            "unit": "Megabytes",
+            "range": "3",
+            "extra": "Value for Tooltip: 25\nOptional Num #2: 100\nAnything Else!"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "eran@starkware.co",
+            "name": "eranreshef-starkware",
+            "username": "eranreshef-starkware"
+          },
+          "committer": {
+            "email": "eran@starkware.co",
+            "name": "eranreshef-starkware",
+            "username": "eranreshef-starkware"
+          },
+          "distinct": true,
+          "id": "6eea2f2aaa00233ec3b4a754a33db73cd207b96f",
+          "message": " lower values",
+          "timestamp": "2023-03-21T09:20:50+02:00",
+          "tree_id": "5c0604fcaa2aec8cfefd9d17e11682fa0804301c",
+          "url": "https://github.com/eranreshef-starkware/test-benchmark/commit/6eea2f2aaa00233ec3b4a754a33db73cd207b96f"
+        },
+        "date": 1679383270839,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "My Custom Smaller Is Better Benchmark - CPU Load",
+            "value": 34,
+            "unit": "Percent"
+          },
+          {
+            "name": "My Custom Smaller Is Better Benchmark - Memory Used",
+            "value": 9,
             "unit": "Megabytes",
             "range": "3",
             "extra": "Value for Tooltip: 25\nOptional Num #2: 100\nAnything Else!"
