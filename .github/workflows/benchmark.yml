@@ -97,15 +97,8 @@ jobs:
 
       - name: Push benchmark result
         run: |
-          ls -l
-          git status
-          git fetch
-          git checkout gh-pages
-          ls -l
-          git status
           git config --global user.name "eran-test-user"
           git config --global user.email "username@users.noreply.github.com"
-          git add .
           git commit -m "${UNIQE_ID}"
           git push 'https://eranreshef-starkware:${{ secrets.GITHUB_TOKEN }}@github.com/eranreshef-starkware/test-benchmark.git' gh-pages:gh-pages
       # - name: Clean the deployment
